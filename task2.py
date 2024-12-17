@@ -12,7 +12,7 @@ b = 0
 
 print("========================")
 
-root_bisection, iterations_bisection = bis.bisection_method(f, a, b)
+root_bisection, iterations_bisection = bs.bisection_method(f, a, b)
 if root_bisection is not None:
     print("Bisection method: Root:", root_bisection)
     print("Function value at the root:", f(root_bisection))

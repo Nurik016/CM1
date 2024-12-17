@@ -54,7 +54,7 @@ def g(x):
 a = 1
 b = -2
 
-root_bisection, iterations_bisection = bis.bisection_method(f, a, b)
+root_bisection, iterations_bisection = bs.bisection_method(f, a, b)
 if root_bisection is not None:
     print("Bisection method: Root:", root_bisection)
     print("Function value at the root:", f(root_bisection))
@@ -107,7 +107,7 @@ print("Absolute Error tests")
 root_secant_abs, iterations_secant_abs = s.secant_method(f, a, b)
 root_iteration_abs, iterations_iteration_abs = iter.iteration_method(g, a)
 root_newton_abs, iterations_newton_abs = nr.newton_raphson_method(f, df, a)
-root_bisection_abs, iterations_bisection_abs = bis.bisection_method(f, a, b)
+root_bisection_abs, iterations_bisection_abs = bs.bisection_method(f, a, b)
 # Print absolute error results
 if root_secant_abs is not None:
    print(f"Secant method (abs): Root {root_secant_abs}, iterations = {len(iterations_secant_abs)}")
@@ -125,7 +125,7 @@ print("Relative Error tests")
 root_secant_rel, iterations_secant_rel = s.secant_method(f, a, b)
 root_iteration_rel, iterations_iteration_rel = iter.iteration_method(g, a)
 root_newton_rel, iterations_newton_rel = nr.newton_raphson_method(f, df, a)
-root_bisection_rel, iterations_bisection_rel = bis.bisection_method(f, a, b)
+root_bisection_rel, iterations_bisection_rel = bs.bisection_method(f, a, b)
 # Print relative error results
 if root_secant_rel is not None:
    print(f"Secant method (rel): Root {root_secant_rel}, iterations = {len(iterations_secant_rel)}")
